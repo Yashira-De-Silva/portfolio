@@ -27,7 +27,7 @@
             position: absolute;
             top: 10px;
             left: 10px;
-            width: 100px; /* Adjust as needed */
+            width: 100px;
             height: auto;
             border-radius: 50%; /* Optional: make the image circular */
         }
@@ -39,6 +39,16 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
+            position: relative;
+        }
+
+        .right img {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: auto;
+            border-radius: 50%; /* Optional: make the image circular */
         }
 
         h1 {
@@ -78,13 +88,16 @@
 <body>
     <div class="container">
         <div class="left">
-            <img src="dp.jpg" alt="Profile Picture">
+            <!-- Add the image here -->
+            <img src="https://i.ibb.co/zG47k08/portfolio-image.jpg" alt="Profile Picture">
             <h1>PORTFOLIO.</h1>
             <p>Hello Everyone.</p>
             <h1>I'M Yashira De Silva</h1>
             <a href="sample2.html" class="button">Start →</a>
         </div>
         <div class="right">
+            <!-- Add the new image here -->
+            <img src="https://i.ibb.co/zG47k08/portfolio-image.jpg" alt="Another Image">
             <div class="contact">
                 <p>Contact Me</p>
                 <a href="#">🌐</a>

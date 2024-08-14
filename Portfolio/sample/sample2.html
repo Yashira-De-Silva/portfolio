@@ -6,105 +6,63 @@
     <title>Portfolio</title>
     <style>
         body {
-            background-color: #000000;
-            color: white;
+            background-color: #000;
+            color: #fff;
             font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
             margin: 0;
         }
 
         .container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 2rem;
-        }
-
-        .portfolio {
-            background-color: #000000;
-            padding: 1rem;
-            width: 50%;
-            text-align: justify;
-        }
-
-        .profile {
-            background-color: #000000;
-            padding: 1rem;
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .image {
-            width: 100%;
-            height: auto;
-            max-width: 1000px; /* Optional: To limit the size of the image */
-        }
-
-        .about-me {
             text-align: center;
-            width: 100%; /* Ensure it takes full width */
         }
 
-        h2 {
-            margin-bottom: 1rem;
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 1000px;
+            height: 1000px;
         }
 
         p {
-            line-height: 1.5;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
         }
 
-        .buttons {
-            display: flex;
-            justify-content: center;
-            margin-top: 1rem;
-        }
-
-        button {
-            background-color: #35ba75;
+        .button {
+            background-color: #4CAF50;
             color: white;
-            padding: 1rem 2rem;
-            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
             border-radius: 5px;
-            margin: 0 1rem;
-            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #3e8e41;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="portfolio">
-            <h1>Portfolio</h1>
-            <h2>Projects</h2>
-            <ul>
-                <li>Project 1: Description of project 1</li>
-                <li>Project 2: Description of project 2</li>
-                <li>Project 3: Description of project 3</li>
-            </ul>
-            <h2>Skills</h2>
-            <ul>
-                <li>Critical Thinking </li>
-                <li>Problem Solving</li>
-                <li>Designing</li>
-            </ul>
-            <h2>Experience</h2>
-            <ul>
-                <li>Experience 1: Description of experience 1</li>
-                <li>Experience 2: Description of experience 2</li>
-            </ul>
-        </div>
-        
-        <div class="profile">
-            <img src="dp2.jpg" alt="Profile Picture" class="image">
-            <div class="about-me">
-                <h2>About Me</h2>
-                <p>I'm a Computer Science Undergraduate from NSBM Green University. I'm currently self-learning new programming languages and also a Microsoft Learn Student Ambassador.</p>
-                <div class="buttons">
-                    <button>Hire Me</button>
-                    <button>Download CV</button>
-                </div>
-            </div>
-        </div>
+        <h1>Portfolio</h1>
+        <img src="dp2.jpg" alt="Profile Picture">
+        <h2>About Me</h2>
+        <p>I'm a Computer Science Undergraduate from NSBM Green University. I'm currently self-learning new programming languages and also a Microsoft Learn Student Ambassador.</p>
+        <button class="button">Hire Me</button>
+        <button class="button">Download CV</button>
     </div>
 </body>
 </html>

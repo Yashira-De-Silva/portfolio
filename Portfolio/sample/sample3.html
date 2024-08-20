@@ -3,19 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Achievements</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            background-color: #111111;
-            color: #fff;
-            font-family: sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
-        .container {
+
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
             text-align: center;
+            padding: 50px 0;
+            background-color: #4CAF50;
+            color: white;
         }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .achievements {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 50px 10%;
+        }
+
+        .achievement-card {
+            background-color: white;
+            width: 45%;
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            animation: slideIn 1s forwards;
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .achievement-card h2 {
+            font-size: 1.5rem;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .achievement-card p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Achievements</h1>
+    </header>
+
+    <section class="achievements">
+        <div class="achievement-card">
+            <h2>Organizing Committee Head, Chess Club</h2>
+            <p>Organized major tournaments like U Sports, Inter Batch Tournament, and more.</p>
+        </div>
+        <div class="achievement-card">
+            <h2>Council Member, FOSS Community</h2>
+            <p>Managed tech events and hackathons like Software Freedom Day and Techie Sleuths.</p>
+        </div>
+        <div class="achievement-card">
+            <h2>Mobile App Developer</h2>
+            <p>Designing the 'Forest Time Capsule' app, focusing on environmental awareness.</p>
+        </div>
+        <div class="achievement-card">
+            <h2>Self-Learner</h2>
+            <p>Learning new technologies like React, Docker, and Next.js to enhance my skills.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>

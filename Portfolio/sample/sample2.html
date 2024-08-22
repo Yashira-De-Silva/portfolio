@@ -48,10 +48,20 @@
             font-size: 16px;
             margin: 4px 2px;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         .button:hover {
             background-color: #3e8e41;
+        }
+
+        /* Style specifically for the Back button */
+        .button-back {
+            background-color: orange;
+        }
+
+        .button-back:hover {
+            background-color: darkorange;
         }
 
     </style>
@@ -65,6 +75,6 @@
         <a href="sample3.html" class="button">Hire Me</a>
         <a href="Resume.pdf" class="button">Download CV</a>
     </div>
-    <a href="sample1.html" class="button">🔙</a>
+    <a href="sample1.html" class="button button-back">Back</a>
 </body>
 </html>

@@ -45,7 +45,7 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
             opacity: 0;
             animation: slideIn 1s forwards;
         }
@@ -53,6 +53,12 @@
         .achievement-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background-color: #f9f9f9;
+        }
+
+        .achievement-card.nearby {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
         }
 
         .achievement-card h2 {
@@ -85,8 +91,16 @@
                 opacity: 1;
             }
         }
+
         .button-back {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
             background-color: orange;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
         .button-back:hover {
@@ -102,7 +116,7 @@
     <section class="achievements">
         <div class="achievement-card">
             <h2>Microsoft Learn Student Ambassador</h2>
-            <p></p>
+            <p>Involved in community learning, sharing knowledge, and leading projects under the Microsoft Learn initiative.</p>
         </div>
         <div class="achievement-card">
             <h2>Organizing Committee Head, Chess Club</h2>
@@ -121,6 +135,28 @@
             <p>Learning new technologies like React, Docker, and Next.js to enhance my skills.</p>
         </div>
     </section>
-    <a href="sample2.html" class="button button-back">Back</a>
+
+    <a href="sample2.html" class="button-back">Back</a>
+
+    <script>
+        document.querySelectorAll('.achievement-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                // Detect proximity to the card edges and apply effect
+                if (x < 50 || x > rect.width - 50 || y < 50 || y > rect.height - 50) {
+                    card.classList.add('nearby');
+                } else {
+                    card.classList.remove('nearby');
+                }
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.classList.remove('nearby');
+            });
+        });
+    </script>
 </body>
 </html>

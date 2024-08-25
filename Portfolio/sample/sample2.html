@@ -19,8 +19,16 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             min-height: 100vh;
+            padding-top: 50px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
         .container {
@@ -28,16 +36,10 @@
             animation: fadeIn 1.5s ease-in-out;
         }
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            letter-spacing: 2px;
-        }
-
         img {
             border-radius: 50%;
-            width: 200px;
-            height: 200px;
+            width: 400px;
+            height: 400px;
             margin-bottom: 20px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
             animation: pulse 1.5s infinite alternate;
@@ -82,6 +84,11 @@
             background-color: darkorange;
         }
 
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -114,15 +121,15 @@
     </style>
 </head>
 <body>
+    <h1>Portfolio</h1>
     <div class="container">
-        <h1>Portfolio</h1>
         <img src="dp2.jpg" alt="Profile Picture">
         <h2>About Me</h2>
         <p>I'm a Computer Science Undergraduate from NSBM Green University. I'm currently self-learning new programming languages and also a Microsoft Learn Student Ambassador.</p>
         <a href="sample3.html" class="button">Hire Me</a>
         <a href="Resume.pdf" class="button">Download CV</a>
     </div>
-    <div class="button-container" style="text-align: center; margin-top: 30px;">
+    <div class="button-container">
         <a href="sample1.html" class="button button-back">Back</a>
     </div>
 </body>

@@ -15,32 +15,38 @@
 
         .container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
-            text-align: center;
             position: relative;
+            text-align: center;
         }
 
-        h4 {
+        .top-left {
+            position: absolute;
+            top: 20px;
+            left: 20px;
             font-size: 2rem;
             letter-spacing: 5px;
-            margin-bottom: 20px;
             opacity: 0;
             animation: fadeIn 2s ease-in-out forwards;
         }
 
+        .center-content {
+            position: relative;
+            z-index: 1;
+        }
+
         h1 {
             font-size: 5rem;
-            margin-bottom: 30px;
+            margin: 20px 0;
             opacity: 0;
             animation: fadeIn 2s ease-in-out 0.5s forwards;
         }
 
         p {
             font-size: 1.5rem;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             opacity: 0;
             animation: fadeIn 2s ease-in-out 1s forwards;
         }
@@ -118,8 +124,8 @@
 </head>
 <body>
     <div class="container">
-        <h4>PORTFOLIO.</h4>
-        <div class="left">
+        <div class="top-left">PORTFOLIO.</div>
+        <div class="center-content">
             <p>Hello Everyone.</p>
             <h1>I'M Yashira De Silva</h1>
             <a href="sample2.html" class="button">Start →</a>
@@ -127,7 +133,7 @@
         <img src="dp2.jpg" alt="Profile Picture">
         <div class="contact">
             <p>Contact Me</p>              
-            <a href="yashiradesilva.me">🌐</a>
+            <a href="https://yashiradesilva.me">🌐</a>
             <a href="mailto:yashiradesilva@gmail.com">📧</a>
             <a href="tel:+94767871222">📞</a>
         </div>

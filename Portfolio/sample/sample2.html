@@ -4,38 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
         body {
             background-color: #000;
-            color: #fff;
-            font-family: sans-serif;
+            color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            margin: 0;
         }
 
         .container {
             text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 3rem;
             margin-bottom: 20px;
+            letter-spacing: 2px;
         }
 
         img {
             border-radius: 50%;
-            width: 1000px;
-            height: 1000px;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            animation: pulse 1.5s infinite alternate;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
         }
 
         p {
-            font-size: 1.2em;
+            font-size: 1.2rem;
             line-height: 1.6;
             margin-bottom: 30px;
+            animation: slideIn 1s ease-in-out;
         }
 
         .button {
@@ -45,23 +63,52 @@
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
+            font-size: 1rem;
+            margin: 10px 5px;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
 
         .button:hover {
             background-color: #3e8e41;
+            transform: scale(1.1);
         }
 
-      
         .button-back {
             background-color: orange;
         }
 
         .button-back:hover {
             background-color: darkorange;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.05);
+            }
         }
 
     </style>
@@ -75,6 +122,8 @@
         <a href="sample3.html" class="button">Hire Me</a>
         <a href="Resume.pdf" class="button">Download CV</a>
     </div>
-    <a href="sample1.html" class="button button-back">Back</a>
+    <div class="button-container" style="text-align: center; margin-top: 30px;">
+        <a href="sample1.html" class="button button-back">Back</a>
+    </div>
 </body>
 </html>

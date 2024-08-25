@@ -84,15 +84,27 @@
             display: inline-block;
             margin: 10px;
             padding: 10px 20px;
-            background-color: orange;
-            color: white;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
 
-        .button-container a:hover {
+        .button-container a.back {
+            background-color: orange;
+            color: white;
+        }
+
+        .button-container a.back:hover {
             background-color: darkorange;
+        }
+
+        .button-container a.next {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .button-container a.next:hover {
+            background-color: #388E3C;
         }
 
         @keyframes slideUp {
@@ -165,8 +177,8 @@
     </section>
 
     <div class="button-container">
-        <a href="sample3.html">Back</a>
-        <a href="sample4.html">Next</a>
+        <a href="sample3.html" class="back">Back</a>
+        <a href="sample5.html" class="next">Next</a>
     </div>
 </body>
 </html>

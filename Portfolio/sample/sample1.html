@@ -20,6 +20,7 @@
             justify-content: center;
             height: 100vh;
             text-align: center;
+            position: relative;
         }
 
         h4 {
@@ -62,7 +63,7 @@
         }
 
         img {
-            width: 100%;
+            width: 50%;
             max-width: 1000px;
             height: auto;
             border-radius: 20px;
@@ -70,6 +71,9 @@
             margin-top: 40px;
             opacity: 0;
             animation: fadeIn 2s ease-in-out 2s forwards, scaleUp 1s ease-in-out 2s forwards;
+            position: absolute;
+            right: 0;
+            transform: translateX(50%);
         }
 
         .contact {

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Skills</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #000000;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #0a0a0a;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .skills-section {
+            padding: 50px 10%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .skill-card {
+            background-color: #1e1e1e;
+            border-radius: 15px;
+            padding: 30px;
+            width: 25%;
+            min-width: 280px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            opacity: 0;
+            animation: slideUp 1.2s forwards ease-in-out;
+        }
+
+        .skill-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            background-color: #2a2a2a;
+        }
+
+        .skill-card i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #4CAF50;
+            animation: rotateIcon 2s linear infinite;
+        }
+
+        .skill-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        .skill-card p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotateIcon {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>My Skills</h1>
+    </header>
+
+    <section class="skills-section">
+        <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+            <p>Building semantic and accessible web pages with the latest HTML standards.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+            <p>Creating responsive and visually appealing web designs using modern CSS techniques.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fab fa-js-square"></i>
+            <h3>JavaScript</h3>
+            <p>Developing dynamic and interactive web applications with JavaScript.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fab fa-react"></i>
+            <h3>React</h3>
+            <p>Building scalable and high-performance front-end applications with React.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fab fa-docker"></i>
+            <h3>Docker</h3>
+            <p>Containerizing applications for development, testing, and deployment.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fab fa-node"></i>
+            <h3>Node.js</h3>
+            <p>Building fast and scalable server-side applications using Node.js.</p>
+        </div>
+    </section>
+</body>
+</html>

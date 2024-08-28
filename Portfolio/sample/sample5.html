@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashira De Silva - GitHub Performance</title>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 10px;
+            width: 340px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+            animation: hoverEffect 1s infinite alternate;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .badge-container {
+            margin-top: 20px;
+            animation: zoomIn 1.5s ease;
+        }
+
+        .badge-container img {
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .badge-container img:hover {
+            transform: scale(1.2);
+        }
+
+        .back-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #f08800;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2em;
+            box-shadow: 0px 0px 10px rgba(240, 136, 0, 0.7);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #cc7000;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes hoverEffect {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(3deg);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Yashira De Silva - GitHub Performance</h1>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://github-readme-stats.vercel.app/api?username=Yashira-De-Silva&show_icons=true&theme=dark"
+                alt="Yashira's GitHub Stats">
+        </div>
+        <div class="card">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=Yashira-De-Silva&repo=repository-name&theme=dark"
+                alt="Top Repository">
+        </div>
+        <div class="card">
+            <img src="https://streak-stats.demolab.com/?user=Yashira-De-Silva&theme=dark" alt="Yashira's GitHub Streak">
+        </div>
+    </div>
+    <div class="badge-container">
+        <img src="https://img.shields.io/github/followers/Yashira-De-Silva?label=Follow&style=social"
+            alt="GitHub Followers">
+        <img src="https://img.shields.io/github/stars/Yashira-De-Silva?label=Stars&style=social" alt="GitHub Stars">
+    </div>
+
+    <!-- Back Button -->
+    <a href="your-back-link.html" class="back-button">Back</a>
+</body>
+
+</html>

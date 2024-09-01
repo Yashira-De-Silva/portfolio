@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me - Yashira De Silva</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeInDown 1.5s ease;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            animation: fadeIn 2s ease;
+        }
+
+        .skills, .achievements, .socials {
+            background-color: #161b22;
+            border: 2px solid #30363d;
+            border-radius: 15px;
+            padding: 30px;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease;
+        }
+
+        .skills:hover, .achievements:hover, .socials:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #f08800;
+            animation: slideInLeft 1.5s ease;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            font-size: 1.2em;
+            margin: 10px 0;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            animation: zoomIn 2s ease;
+        }
+
+        .social-icons a {
+            color: #f08800;
+            font-size: 2em;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #cc7000;
+        }
+
+        .back-button {
+            margin-top: 40px;
+            background-color: #f08800;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2em;
+            box-shadow: 0px 0px 15px rgba(240, 136, 0, 0.7);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #cc7000;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1>Hire Me</h1>
+    <div class="container">
+
+        <!-- Skills Section -->
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>React, Next.js, Docker</li>
+                <li>Node.js, Express, MongoDB</li>
+                <li>Critical Thinking, Leadership, Project Management</li>
+            </ul>
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Organizing Committee Head - Chess Club</li>
+                <li>Microsoft Learn Student Ambassador</li>
+                <li>Council Member - FOSS Community</li>
+                <li>Department Coordinator - CSSL Club</li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="socials">
+            <h2>Connect with Me</h2>
+            <div class="social-icons">
+                <a href="https://github.com/Yashira-De-Silva" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yashira-de-silva" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/YashiraDeSilva" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Back Button -->
+    <a href="index.html" class="back-button">Back to Home</a>
+</body>
+</html>

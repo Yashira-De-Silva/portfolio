@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +40,7 @@
             animation: fadeIn 2s ease;
         }
 
-        .skills, .achievements, .socials {
+        .button {
             background-color: #161b22;
             border: 2px solid #30363d;
             border-radius: 15px;
@@ -48,9 +49,11 @@
             max-width: 800px;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
             transition: transform 0.3s ease;
+            text-decoration: none;
+            color: #c9d1d9;
         }
 
-        .skills:hover, .achievements:hover, .socials:hover {
+        .button:hover {
             transform: scale(1.05);
         }
 
@@ -116,6 +119,7 @@
                 opacity: 0;
                 transform: translateY(-50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -127,6 +131,7 @@
                 opacity: 0;
                 transform: translateX(-50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -138,6 +143,7 @@
                 opacity: 0;
                 transform: translateY(50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -148,6 +154,7 @@
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
@@ -157,6 +164,7 @@
             from {
                 transform: scale(0.8);
             }
+
             to {
                 transform: scale(1);
             }
@@ -164,12 +172,13 @@
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
     <h1>Hire Me</h1>
     <div class="container">
 
- 
-        <div class="skills">
+        <!-- Skills Button -->
+        <a href="skills.html" class="button">
             <h2>Skills</h2>
             <ul>
                 <li>HTML5, CSS3, JavaScript</li>
@@ -177,10 +186,10 @@
                 <li>Node.js, Express, MongoDB</li>
                 <li>Critical Thinking, Leadership, Project Management</li>
             </ul>
-        </div>
+        </a>
 
-       
-        <div class="achievements">
+        <!-- Achievements Button -->
+        <a href="achievements.html" class="button">
             <h2>Achievements</h2>
             <ul>
                 <li>Organizing Committee Head - Chess Club</li>
@@ -188,21 +197,22 @@
                 <li>Council Member - FOSS Community</li>
                 <li>Department Coordinator - CSSL Club</li>
             </ul>
-        </div>
+        </a>
 
-       
+        <!-- Social Media Links -->
         <div class="socials">
             <h2>Connect with Me</h2>
             <div class="social-icons">
                 <a href="https://github.com/Yashira-De-Silva" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/yashira-de-silva" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/mr_nawodhs" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:yashira.desilva@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
 
     </div>
 
-    
+    <!-- Back Button -->
     <a href="sample1.html" class="back-button">Back to Home</a>
 </body>
+
 </html>

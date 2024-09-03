@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +16,12 @@
 
         .container {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             height: 100vh;
             position: relative;
-            text-align: center;
+            text-align: left;
+            padding-left: 50px;
         }
 
         .top-left {
@@ -38,7 +40,7 @@
         }
 
         h1 {
-            font-size: 5rem;
+            font-size: 9rem;
             margin: 20px 0;
             opacity: 0;
             animation: fadeIn 2s ease-in-out 0.5s forwards;
@@ -54,10 +56,10 @@
         .button {
             background-color: #121d6d;
             color: #fff;
-            padding: 15px 30px;
+            padding: 20px 40px;
             text-decoration: none;
-            font-size: 1.2rem;
-            border-radius: 5px;
+            font-size: 1.5rem;
+            border-radius: 8px;
             opacity: 0;
             animation: fadeIn 2s ease-in-out 1.5s forwards;
             transition: background-color 0.3s ease, transform 0.3s ease;
@@ -107,6 +109,7 @@
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
@@ -116,12 +119,14 @@
             from {
                 transform: scale(0.9);
             }
+
             to {
                 transform: scale(1);
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="top-left">PORTFOLIO.</div>
@@ -132,11 +137,12 @@
         </div>
         <img src="dp2.jpg" alt="Profile Picture">
         <div class="contact">
-            <p>Contact Me</p>              
+            <p>Contact Me</p>
             <a href="https://yashiradesilva.me">🌐</a>
             <a href="mailto:yashiradesilva@gmail.com">📧</a>
             <a href="tel:+94767871222">📞</a>
         </div>
     </div>
 </body>
+
 </html>

@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+  }
+  
+  .top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+  
+  .center-content {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+  }
+  
+  h1 {
+    font-size: 8rem;
+    margin: 20px 0;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 0.5s forwards;
+    margin-left: 10%;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 1s forwards;
+    margin-left: 10%;
+  }
+  
+  .button {
+    background-color: #121d6d;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 1.5s forwards;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: #2d3fa6;
+    transform: translateY(-5px);
+  }
+  
+  img {
+    width: 50%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+    margin-top: 40px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 2s forwards, scaleUp 1s ease-in-out 2s forwards;
+    position: absolute;
+    right: 0;
+    transform: translateX(50%);
+  }
+  
+  .contact {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 2.5s forwards;
+  }
+  
+  .contact a {
+    color: #6b1515;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    font-size: 2rem;
+  }
+  
+  .contact a:hover {
+    color: orange;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.9);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  

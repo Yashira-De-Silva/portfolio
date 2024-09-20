@@ -93,22 +93,33 @@
             position: absolute;
             bottom: 20px;
             width: 100%;
-            text-align:center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             font-size: 1.5rem;
             opacity: 0;
             animation: fadeIn 2s ease-in-out 2.5s forwards;
         }
 
+        .contact-links {
+            display: flex; /* Display the links in a row */
+            gap: 20px; /* Add some space between the icons */
+        }
+
         .contact a {
             color: #6b1515;
             text-decoration: none;
-            margin: 0 10px;
             transition: color 0.3s ease;
             font-size: 2rem;
         }
 
         .contact a:hover {
             color: orange;
+        }
+
+        .contact p {
+            margin: 0;
+            margin-bottom: 10px; /* Space between "Contact Me" and icons */
         }
 
         @keyframes fadeIn {
@@ -141,9 +152,11 @@
         <img src="dp2.jpg" alt="Profile Picture">
         <div class="contact">
             <p>Contact Me</p>              
-            <a href="https://yashiradesilva.me">🌐</a>
-            <a href="mailto:yashiradesilva@gmail.com">📧</a>
-            <a href="tel:+94767871222">📞</a>
+            <div class="contact-links">
+                <a href="https://yashiradesilva.me">🌐</a>
+                <a href="mailto:yashiradesilva@gmail.com">📧</a>
+                <a href="tel:+94767871222">📞</a>
+            </div>
         </div>
     </div>
 </body>
